@@ -255,8 +255,7 @@ padding: .8rem 3rem;
     
     }
     #search-form{
-        display: block;
-        position:absolute;
+
         top:380px;left:0;
         height: 7%;
         width: 100%;
