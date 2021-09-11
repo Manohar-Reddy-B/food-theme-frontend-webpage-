@@ -211,8 +211,8 @@ section:nth-child(even){
     text-align:center;
 
 }
-.fa-heart,
-.fa-eye{
+.dishes_container_box .fa-heart,
+.dishes_container_box .fa-eye{
     position: absolute;
     top:1.5rem;
     background: #eee;
@@ -223,16 +223,16 @@ section:nth-child(even){
     font-size: 2rem;
     color: var(--black);
 }
-.fa-heart:hover,
-.fa-eye:hover{
+.dishes_container_box .fa-heart:hover,
+.dishes_container_box .fa-eye:hover{
     background: var(--green);
     color: #fff;
     
 }
-.fa-heart{
+.dishes_container_box .fa-heart{
     right: -15rem;
 }
-.fa-eye{
+.dishes_container_box .fa-eye{
     left: -15rem;
 }
 .dishes_container_box:hover .fa-heart{
@@ -282,6 +282,7 @@ section:nth-child(even){
         margin-right: 1rem;
         font-size: 2.5rem;
     }
+    
 
     .about_row{
         display: flex;
@@ -299,6 +300,8 @@ section:nth-child(even){
     .about_row_content{
         flex: 1 1 45rem;
         margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
     }
     
     .about_row_content h3{
@@ -342,6 +345,20 @@ section:nth-child(even){
     color: var(--green);
 }
 
+
+.about_sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.about_heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
 
 
 
@@ -399,23 +416,20 @@ section:nth-child(even){
     
     }
     #search-form{
-
-        top:380px;left:0;
-        height: 7%;
+        position: relative;
+        top:430px;left:0;
+        height: 10%;
         width: 100%;
         z-index: 999;
-        background: var(--green);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 1rem;
+        padding: 5px;
+     
     }
     .search_form{
         width: 100%;
     }
    .home{
-    position:absolute;
-       top:400px;
+    position:relative;
+       top:350px;
       
    }
 
@@ -424,10 +438,37 @@ section:nth-child(even){
         font-size:5rem;
     
     }
-    
+    .dishes{
+        position: relative;
+        top:350px;
+        
+    }
+    .about{
+        position: relative;
+        top:350px;
+        
+    }
+    .about_row{
+        position: relative;
+        top:350px;
+    }
+    .about{
+        position: relative;
+        top: 350px;
+    }
+
+    .about_sub-heading{
+        
+        position: relative;
+        top: 350px;
+   
+    }
+    .about_heading{
+        position: relative;
+        top: 350px;
+    }
 }
-@media(max-width:450px)
-{
+@media(max-width:450px){
     html{
         font-size: 50%;
     }
