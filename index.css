@@ -158,6 +158,15 @@ section:nth-child(even){
  .home_slide_image{
     flex:1 1 45rem;
     width: 100%;
+    animation: float 2s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
 }
 
 .home_slide_content span{
@@ -293,6 +302,7 @@ section:nth-child(even){
 
     .about_row_img{
         flex: 1 1 45rem;
+        animation: float 2s linear infinite;
     }
     .about_row_img img{
        width: 100%;
