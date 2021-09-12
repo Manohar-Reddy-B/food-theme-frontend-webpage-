@@ -193,6 +193,48 @@ display: none;
 }
 
 
+.footer_box_container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+   
+}
+
+.footer_box h3{
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.footer_box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.footer_box a:hover{
+   text-decoration: underline;
+    color: var(--green);
+}
+
+.footer_credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top:1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer_credit span{
+    color: var(--green);
+}
+
+
+
 
 
 
@@ -244,7 +286,11 @@ display: none;
     
     }
   
+    footer{
+        position: relative;
+        top: 80px;
 
+    }
 
 
 
