@@ -1,0 +1,262 @@
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.logo {
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+   
+.header_logo i{
+    color: var(--green);
+}
+
+.navbar_nav_items a{
+   font-size:1.7rem;
+   border-radius: .5rem;
+   padding: .5rem 1.5rem;
+   color: var(--light-color);
+
+}
+
+
+.navbar_nav_items a:hover,
+a.active{
+color: #fff;
+background: var(--green);
+}
+
+ .navbar_icon i,
+ .navbar_icon a{ 
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+
+}
+.navbar_icon i:hover,
+.navbar_icon a:hover{
+    color: #fff;
+    background:var(--green);
+    transform: rotate(360deg);
+}
+.navbar_icon #menu-bars{
+display: none;
+}
+
+.menu{
+    position: relative;
+    top: 80px;
+}
+.menu_box_container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap: 1.5rem;
+}
+.menu_box{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+.menu_image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+
+}
+.menu_image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.menu_image .fa-heart{
+    position: absolute;
+    top: 2.5rem;right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--black);
+}
+.menu_image .fa-heart:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+.menu_content{
+    padding: 2rem;
+    padding-top: 0;
+}
+.menu_content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu_content .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.menu_content  h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.menu_content  p{
+    color: var(--light-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.menu_price{
+    color: var(--green);
+   margin-left: 1rem;
+   font-size:2rem;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+    
+.btn:hover{
+    background-color: var(--green);
+    letter-spacing: .1rem;
+}
+
+
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* meadia queries */
+@media(max-width:991px)
+{
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+   section{
+        padding: 2rem;
+    }
+    
+    
+}
+
+@media(max-width:768px){
+    .navbar_icon #menu-bars{
+        display: inline-block;
+    }
+    .navbar_nav_items{
+        position:absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        
+    }
+    .navbar_nav_items a.active{
+    background: var(--green);
+    }
+    .navbar_nav_items a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    
+    }
+  
+
+
+
+
+
+
+
+
+
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+  
+}
